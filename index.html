@@ -1,0 +1,11 @@
+---
+layout:default
+title:Sean's Blog
+---
+
+{{page.title}}
+最新文章
+
+{%s for post in site.post %}
+{{post.date | date_to_string}} {{post.title}}
+{% endfor %}
